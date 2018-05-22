@@ -1,12 +1,35 @@
 /* PROJECT: COLMAR ACADEMY */
 
 html {
-
+  font-size: 100%;
 }
 
 body {
 
 }
+
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: .8em;
+}
+p {
+  font-size: 1.2em;
+}
+
 
 /* HEADER
 ============================ */
@@ -38,8 +61,62 @@ body {
 .menu-items ul li:last-child {
   margin-right: 0;
 }
-
-
-
 /* @end HEADER
+============================ */
+
+/* SECTION BLOCK(S)
+============================ */
+.block1,
+.block2 {
+  height: auto;
+  padding: 32px 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.block1 {
+  background-color: lightgrey;
+}
+.section-left {
+  width: 60%;
+  margin-right: 24px;
+}
+.section-left img {
+  width: 100%;
+  height: auto;
+}
+.block2 .section-left img {
+  margin-bottom: 32px;
+}
+.block1 .section-right {
+  width: 30%;
+  color: #424242;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block1 .section-right h1,
+.block1 .section-right p,
+.block1 .section-right span {
+  margin: 15px 0;
+}
+.block1 .section-right h1 {
+  font-weight: bold;
+}
+.btn {
+  padding: 8px 100px;
+  display: inline-block;
+  background-color: #424242;
+  color: white;
+  text-align: center;
+}
+/* @end SECTION BLOCK(S)
+============================ */
+
+/* SECTION PROMO
+============================ */
+
+
+/* @end SECTION PROMO
 ============================ */
