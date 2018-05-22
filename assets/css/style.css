@@ -1,1 +1,45 @@
 /* PROJECT: COLMAR ACADEMY */
+
+html {
+
+}
+
+body {
+
+}
+
+/* HEADER
+============================ */
+.menu-top {
+  height: 64px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-grow: 1;
+  line-height: 32px;
+}
+.logo .logo-bold {
+  font-weight: bold;
+}
+.menu-items ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+.menu-items ul li {
+  margin-right: 16px;
+}
+.menu-items ul li:last-child {
+  margin-right: 0;
+}
+
+
+
+/* @end HEADER
+============================ */
