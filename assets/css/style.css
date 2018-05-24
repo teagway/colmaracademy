@@ -67,10 +67,14 @@ p {
 /* SECTION BLOCK(S)
 ============================ */
 .block1,
-.block2 {
+.block2,
+.block2-alt {
   height: auto;
   min-height: 200px;
   padding: 0 24px;
+}
+.block1,
+.info-sections {
   display: flex;
   justify-content: flex-start;
 }
@@ -78,15 +82,18 @@ p {
 .block3 {
   background-color: lightgrey;
 }
-.section-left,
-.section-right {
+.block1 .section-left,
+.block1 .section-right,
+.block2 .section-left,
+.block2 .section-right {
   padding: 32px 0;
 }
 .section-left {
   width: 60%;
   margin-right: 24px;
 }
-.section-left img {
+.section-left img,
+.section-left video {
   width: 100%;
   height: auto;
 }
@@ -120,18 +127,27 @@ p {
   width: 40%;
   border-left: solid thin lightgrey;
 }
-.block2 .section-left img {
+.block2-alt .section-right {
+  width: 40%;
+}
+.block2 .section-left img
+.block2-alt .section-left img, {
   margin-bottom: 32px;
 }
 .block2 .section-left .section-content h2,
-.block2 .section-left .section-content blockquote {
+.block2 .section-left .section-content blockquote,
+.block2-alt .section-left .section-content h2,
+.block2-alt .section-left .section-content blockquote {
   margin-bottom: 24px;
 }
 .block2 .section-left .section-content .quote,
-.block2 .section-left .section-content .author {
+.block2 .section-left .section-content .author,
+.block2-alt .section-left .section-content .quote,
+.block2-alt .section-left .section-content .author {
   font-size: .85em;
 }
-.block2 .section-right .info-post {
+.block2 .section-right .info-post,
+.block2-alt .section-right .info-post {
   padding: 16px;
   display: flex;
   justify-content: flex-start;
@@ -148,21 +164,28 @@ p {
 .block2 .section-right .info-post:last-child {
   background-color: lightgrey;
 }
-.block2 .section-right .info-post img {
+.block2 .section-right .info-post img,
+.block2-alt .section-right .info-post img {
   width: 35%;
   height: auto;
   padding: 0 16px 0 0;
 }
 .block2 .section-right .info-post h4,
 .block2 .section-right .info-post span,
-.block2 .section-right .info-post a {
+.block2 .section-right .info-post a,
+.block2-alt .section-right .info-post h4,
+.block2-alt .section-right .info-post span,
+.block2-alt .section-right .info-post a {
   margin: 8px 0;
 }
 .block2 .section-right .info-post span,
-.block2 .section-right .info-post a {
+.block2 .section-right .info-post a,
+.block2-alt .section-right .info-post span,
+.block2-alt .section-right .info-post a {
   font-size: .85em
 }
-.block2 .section-right .info-post span {
+.block2 .section-right .info-post span,
+.block2-alt .section-right .info-post span {
   display: block;
 }
 .block3 {
@@ -198,13 +221,33 @@ p {
 .block3 .info-block-copy span {
   font-size: .85em;
 }
-
+.block2-alt {
+  padding-bottom: 12px;
+}
+.block2-alt .info-title {
+  padding-top: 32px;
+}
+.block2-alt .section-left video {
+  margin-bottom: 24px;
+}
+.block2-alt .section-right .info-post:first-child {
+  background-color: lightgrey;
+}
 /* @end SECTION BLOCK(S)
 ============================ */
 
-/* SECTION PROMO
+/* FOOTER
 ============================ */
-
-
-/* @end SECTION PROMO
+footer {
+  padding: 16px 24px;
+  font-size: .8em;
+  border-top: solid thin lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  flex-grow: 1;
+}
+/* @end FOOTER
 ============================ */
