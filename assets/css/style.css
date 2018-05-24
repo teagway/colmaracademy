@@ -24,7 +24,7 @@ h5 {
   font-size: 1em;
 }
 h6 {
-  font-size: .8em;
+  font-size: .85em;
 }
 p {
   font-size: 1.2em;
@@ -74,7 +74,8 @@ p {
   display: flex;
   justify-content: flex-start;
 }
-.block1 {
+.block1,
+.block3 {
   background-color: lightgrey;
 }
 .section-left,
@@ -130,43 +131,74 @@ p {
 .block2 .section-left .section-content .author {
   font-size: .85em;
 }
-.block2 .section-right .post {
-
-}
-.block2 .section-right .info-block {
+.block2 .section-right .info-post {
   padding: 16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.block2 .section-right .info-block:first-child {
+.block2 .section-right .info-post:first-child {
   padding-top: 0;
   border-bottom: solid thin lightgrey;
 }
-.block2 .section-right .info-block:nth-child(1n+2) {
+.block2 .section-right .info-post:nth-child(1n+2) {
   margin-top: 1px;
   border-top: solid thin lightgrey;
 }
-.block2 .section-right .info-block:last-child {
+.block2 .section-right .info-post:last-child {
   background-color: lightgrey;
 }
-.block2 .section-right .info-block img {
+.block2 .section-right .info-post img {
   width: 35%;
   height: auto;
   padding: 0 16px 0 0;
 }
-.block2 .section-right .info-block h4,
-.block2 .section-right .info-block span,
-.block2 .section-right .info-block a {
+.block2 .section-right .info-post h4,
+.block2 .section-right .info-post span,
+.block2 .section-right .info-post a {
   margin: 8px 0;
 }
-.block2 .section-right .info-block span,
-.block2 .section-right .info-block a {
+.block2 .section-right .info-post span,
+.block2 .section-right .info-post a {
   font-size: .85em
 }
-.block2 .section-right .info-block span {
+.block2 .section-right .info-post span {
   display: block;
 }
+.block3 {
+  height: auto;
+  min-height: 200px;
+  padding: 32px 56px;
+}
+.block3 .info-blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.info-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.block3 .info-block {
+  width: 30%;
+  margin: 0 16px 32px 16px;
+  background-color: white;
+}
+.block3 .info-block img {
+  width: 100%;
+  height: auto;
+}
+.block3 .info-block-copy {
+  padding: 16px 16px 24px 16px;
+}
+.block3 .info-block-copy h4,
+.block3 .info-block-copy h6 {
+  margin-bottom: 8px;
+}
+.block3 .info-block-copy span {
+  font-size: .85em;
+}
+
 /* @end SECTION BLOCK(S)
 ============================ */
 
