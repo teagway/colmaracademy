@@ -69,13 +69,17 @@ p {
 .block1,
 .block2 {
   height: auto;
-  padding: 32px 24px;
+  min-height: 200px;
+  padding: 0 24px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 .block1 {
   background-color: lightgrey;
+}
+.section-left,
+.section-right {
+  padding: 32px 0;
 }
 .section-left {
   width: 60%;
@@ -85,11 +89,8 @@ p {
   width: 100%;
   height: auto;
 }
-.block2 .section-left img {
-  margin-bottom: 32px;
-}
 .block1 .section-right {
-  width: 30%;
+  width: 40%;
   color: #424242;
   text-align: left;
   display: flex;
@@ -101,7 +102,9 @@ p {
 .block1 .section-right span {
   margin: 15px 0;
 }
-.block1 .section-right h1 {
+.section-left h2,
+.section-right h1,
+.section-right h4 {
   font-weight: bold;
 }
 .btn {
@@ -110,6 +113,59 @@ p {
   background-color: #424242;
   color: white;
   text-align: center;
+}
+
+.block2 .section-right {
+  width: 40%;
+  border-left: solid thin lightgrey;
+}
+.block2 .section-left img {
+  margin-bottom: 32px;
+}
+.block2 .section-left .section-content h2,
+.block2 .section-left .section-content blockquote {
+  margin-bottom: 24px;
+}
+.block2 .section-left .section-content .quote,
+.block2 .section-left .section-content .author {
+  font-size: .85em;
+}
+.block2 .section-right .post {
+
+}
+.block2 .section-right .info-block {
+  padding: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.block2 .section-right .info-block:first-child {
+  padding-top: 0;
+  border-bottom: solid thin lightgrey;
+}
+.block2 .section-right .info-block:nth-child(1n+2) {
+  margin-top: 1px;
+  border-top: solid thin lightgrey;
+}
+.block2 .section-right .info-block:last-child {
+  background-color: lightgrey;
+}
+.block2 .section-right .info-block img {
+  width: 35%;
+  height: auto;
+  padding: 0 16px 0 0;
+}
+.block2 .section-right .info-block h4,
+.block2 .section-right .info-block span,
+.block2 .section-right .info-block a {
+  margin: 8px 0;
+}
+.block2 .section-right .info-block span,
+.block2 .section-right .info-block a {
+  font-size: .85em
+}
+.block2 .section-right .info-block span {
+  display: block;
 }
 /* @end SECTION BLOCK(S)
 ============================ */
