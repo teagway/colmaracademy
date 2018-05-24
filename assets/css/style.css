@@ -130,8 +130,8 @@ p {
 .block2-alt .section-right {
   width: 40%;
 }
-.block2 .section-left img
-.block2-alt .section-left img, {
+.block2 .section-left img,
+.block2-alt .section-left img {
   margin-bottom: 32px;
 }
 .block2 .section-left .section-content h2,
