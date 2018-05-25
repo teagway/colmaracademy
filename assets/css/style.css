@@ -150,6 +150,9 @@ p {
 .block2-alt .section-left .section-content .author {
   font-size: .85em;
 }
+.block2 .info-post-mobile {
+  display: none;
+}
 .block2 .section-right .info-post,
 .block2-alt .section-right .info-post {
   padding: 16px;
@@ -168,7 +171,7 @@ p {
 .block2 .section-right .info-post:last-child {
   background-color: lightgrey;
 }
-.block2 .section-right .info-post img,
+.block2 .section-right img.info-post-reg,
 .block2-alt .section-right .info-post img {
   width: 35%;
   height: auto;
@@ -288,6 +291,7 @@ footer {
   }
   .block1 .section-right {
     padding-top: 0;
+    padding-bottom: 0;
   }
   .block1 .section-right-copy {
     padding: 0 16px;
@@ -301,6 +305,70 @@ footer {
   }
   .btn {
     background-color: #878787;
+  }
+  .block2 .section-left {
+    display: none;
+  }
+  .block2 .section-right {
+    width: 100%;
+    padding-top: 16px;
+  }
+  .block2 .section-right .info-post {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 64px;
+  }
+  .block2 .section-right .info-post:last-child {
+    margin-bottom: 0;
+  }
+  .block2 .section-right .info-post:first-child,
+  .block2 .section-right .info-post:nth-child(1n+2),
+  .block2 .section-right .info-post:last-child {
+    border: none;
+    background-color: white;
+  }
+  .block2 .info-post-reg {
+    display: none;
+  }
+  .block2 .info-post-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .block3,
+  .block2-alt {
+    background-color: white;
+    border-top: solid thin lightgrey;
+  }
+  .block3 .info-blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block3 .info-block {
+    width: 100%;
+    margin: 0 0 8px 0;
+    padding: 16px 16px 24px 16px;
+    background-color: lightgrey;
+  }
+  .block3 img,
+  .block3 h6,
+  .block3 span {
+    display: none;
+  }
+  .block2-alt .section-left {
+    margin: 0;
+  }
+  .block2-alt .section-content {
+    display: none;
+  }
+  .block2-alt .section-right {
+    display: none;
+  }
+  .block2-alt .info-title {
+    margin-bottom: 16px;
+  }
+  footer {
+    text-align: center;
   }
 
 }
