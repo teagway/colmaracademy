@@ -40,6 +40,9 @@ p {
   justify-content: center;
   align-items: center;
 }
+.menu-mobile {
+  display: none;
+}
 .logo {
   display: flex;
   justify-content: flex-start;
@@ -97,7 +100,7 @@ p {
   width: 100%;
   height: auto;
 }
-.block1 .section-right {
+.section-right {
   width: 40%;
   color: #424242;
   text-align: left;
@@ -112,12 +115,13 @@ p {
 }
 .section-left h2,
 .section-right h1,
-.section-right h4 {
+.section-right h4,
+.info-title {
   font-weight: bold;
 }
 .btn {
   padding: 8px 100px;
-  display: inline-block;
+  display: block;
   background-color: #424242;
   color: white;
   text-align: center;
@@ -251,3 +255,52 @@ footer {
 }
 /* @end FOOTER
 ============================ */
+
+/* <768px
+============================ */
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 100%;
+    justify-content: space-between;
+    flex-grow: 0;
+  }
+  .logo span {
+    display: none;
+  }
+  .menu-mobile {
+    display: inline-block;
+  }
+  .menu-items {
+    display: none;
+  }
+  .block1 {
+    display: block;
+  }
+  .section-left,
+  .section-right {
+    width: 100%;
+  }
+  .block1, .block2, .block2-alt {
+    padding: 0;
+  }
+  .block1 .section-left {
+    padding: 0;
+  }
+  .block1 .section-right {
+    padding-top: 0;
+  }
+  .block1 .section-right-copy {
+    padding: 0 16px;
+  }
+  .block1 .section-right h1,
+  .block1 .section-right span {
+    margin-bottom: 32px;
+  }
+  .block1 .section-right p {
+    margin-bottom: 24px;
+  }
+  .btn {
+    background-color: #878787;
+  }
+
+}
